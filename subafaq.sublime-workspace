@@ -1,0 +1,1717 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"drop",
+				"dropdown-menu"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"show",
+				"showLayoutWithTitle"
+			],
+			[
+				"_",
+				"_partials"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"new",
+				"newSnippet"
+			],
+			[
+				"fun",
+				"fun	function …"
+			],
+			[
+				"func",
+				"function"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/routes.php",
+			"settings":
+			{
+				"buffer_size": 77,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/layouts/master.blade.php",
+			"settings":
+			{
+				"buffer_size": 652,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/controllers/IndexController.php",
+			"settings":
+			{
+				"buffer_size": 208,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/index.blade.php",
+			"settings":
+			{
+				"buffer_size": 53,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/controllers/BaseController.php",
+			"settings":
+			{
+				"buffer_size": 528,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Sublime Text 2 Tips & Tricks:\n☐ Customizing - Modification in user and not default (Ctrl+Shft+P -> Preferences: Settings - User)\n☐ Multi-Cursor\n  ☐ Ctrl+D - Sequentially multicursor identical texts\n  ☐ Alt+F3 - multicursor all identical texts\n  ☐ Ctrl+Shft+L - Multicursor on selected lines\n☐ Joining Lines is powerful (may need to keymap)\n☐ Quick file reference (command pallete + 'copy')\n☐ The Awesome Command Pallete\n  ☐ Ctrl+Shft+P -To quick access sublime's features\n  ☐ Ctrl+P - To quick access files\n  ☐ Ctrl+R - '@' To quick access funtions in file (can be combined with Ctrl+P)\n  ☐ Ctrl+G - ':' To jumpt to a line in file \n☐ Master them split windows\n  ☐ Alt+Shft+[1,2,3,4,5] - Access the split windows of your choice\n  ☐ Ctrl+Shft[1,2,3,4,5] - Move the active file / tab to the group designated by the shortcut key\n  ☐ Ctrl+[1,2,3,4,5] - Move to a specific screen\n  ☐ Alt+[1,2,3,4 -> n] - Activate a specific tab\n  ☐ active screen buffer - Buffering space between screens \n    ☐ modify the keymapping to user key mapping\n☐ Custom Builds Baby\n  ☐ Setup the build system (tools->build systems)\n  ☐ Enable them (tools->bulids)\n  ☐ then build the script (Ctrl+B)\n☐ Project Features\n  ☐ Specify what folders to see (filter) by editing the <projectname>.sublime-project (folders -> path(s))\n  ☐ Specify excludes patterns as well withing the path to hide files / folders that you don't work on\n☐ Snippets\n   ☐ Creating\n   ☐ Usage\n   ☐ github:gist (requires Gist package)\n     ☐ create github account just for snippets\n     ☐ specify account parameters in the gist.sublime-settings\n     ☐ use the command pallete to access the features\n☐ Plugins: Must have\n  ☐ Package Control\n  ☐ Package Decontrol\n  ☐ PlainTasks\n  ☐ Bracket Highlighter\n  ☐ Laravel Blade Highlighter\n  ☐ Laravel 4 Artisan\n  ☐ Snippet: Blade\n  ☐ Snippet: Laravel 4\n  ☐ Snippets: Any required\n  ☐ Snippet: CoffeeScript\n  ☐ PHPUnit Snippet\n  ☐ Emmet (must learn!)\n  ☐ Prefixr (Cross-browser automation)\n  ☐ Nettuts+ Fetch (awesome way to get files / packages)\n  ☐ AdvanceNewFile\n  ☐ SideBarEnhancements\n  ☐ FindKeyConflicts\n  ☐ Git\n  ☐ Gist\n  ☐ DocBlockr\n  ☐ SublimeLinter (might require node.js for javascript codes)\n  ☐ SublimeLint\n  ☐ HTTP Requester (shows result in a new tab of what values are parsed in a browser)\n  ☐ LiveReload / PyV8 (also install the browser extension)\n  ☐ SublimeXiki (Bash , Cmd line tool)\n  ☐ Theme: Grandson of Obsidian",
+			"file": "/C/Users/suba/Desktop/SublimeText2Tips.TODO",
+			"file_size": 2597,
+			"file_write_time": 130204090463148945,
+			"settings":
+			{
+				"buffer_size": 2416,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/suba/Desktop/nirvaga.TODO",
+			"settings":
+			{
+				"buffer_size": 3476,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/suba/Desktop/myfirstlaravel.TODO",
+			"settings":
+			{
+				"buffer_size": 447,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/suba/Desktop/GettingGoodWithPHP.TODO",
+			"settings":
+			{
+				"buffer_size": 387,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/suba/Desktop/laravel4guide.TODO",
+			"settings":
+			{
+				"buffer_size": 781,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/suba/Desktop/jokes.TODO",
+			"settings":
+			{
+				"buffer_size": 681,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/User/php.sublime-build",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"include",
+				"Snippet: blade-include"
+			],
+			[
+				"yield",
+				"Snippet: blade-yield"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"isntall",
+				"Laravel Artisan: Migrate: Install"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"tield	",
+				"Snippet: blade-yield"
+			],
+			[
+				"yiel",
+				"Snippet: blade-yield"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"controller",
+				"Laravel Artisan: Controller: Make"
+			],
+			[
+				"artisan list",
+				"Laravel Artisan: List"
+			],
+			[
+				"fetch",
+				"Fetch: Package"
+			],
+			[
+				"fet",
+				"Fetch: Package"
+			],
+			[
+				"decon",
+				"Package Decontrol: Install From Github"
+			],
+			[
+				"syntax css",
+				"Set Syntax: CSS"
+			],
+			[
+				"resource",
+				"Laravel Generate: Resource"
+			],
+			[
+				"artisa list",
+				"Laravel Artisan: List"
+			],
+			[
+				"blade",
+				"Set Syntax: PHP - Laravel Blade"
+			],
+			[
+				"syntax bla",
+				"Set Syntax: PHP - Laravel Blade"
+			],
+			[
+				"preference",
+				"Preferences: Settings - User"
+			],
+			[
+				"PREFERE",
+				"Preferences: Settings - User"
+			],
+			[
+				"key bind",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"prefer",
+				"Preferences: Settings - User"
+			],
+			[
+				"pack list",
+				"Package Control: List Packages"
+			],
+			[
+				"package list",
+				"Package Control: List Packages"
+			],
+			[
+				"migrate",
+				"Laravel Artisan: Migrate"
+			],
+			[
+				"generate",
+				"Laravel Generate: Resource"
+			],
+			[
+				"fetch fil",
+				"Fetch: File"
+			],
+			[
+				"artisan",
+				"Laravel Artisan: Migrate: Install"
+			],
+			[
+				"artisan mi",
+				"Laravel Artisan: Migrate: Install"
+			],
+			[
+				"artisan migrate",
+				"Laravel Artisan: Migrate"
+			],
+			[
+				"laravel gene",
+				"Laravel Generate: Resource"
+			],
+			[
+				"remove pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"artisan li",
+				"Laravel Artisan: List"
+			],
+			[
+				"preferen",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"custom",
+				"Laravel Artisan: Custom Command"
+			],
+			[
+				"artisan cust",
+				"Laravel Artisan: Custom Command"
+			],
+			[
+				"artisan routes",
+				"Laravel Artisan: Routes"
+			],
+			[
+				"packagecon",
+				"Package Control: Discover Packages"
+			],
+			[
+				"control",
+				"Package Control: Enable Package"
+			],
+			[
+				"ARTISANC",
+				"Laravel Artisan: Custom Command"
+			],
+			[
+				"artisan mig",
+				"Laravel Artisan: Migrate"
+			],
+			[
+				"artisa li",
+				"Laravel Artisan: List"
+			],
+			[
+				"new do",
+				"Tasks: New document"
+			],
+			[
+				"new",
+				"Tasks: New document"
+			],
+			[
+				"laravel cha",
+				"Laravel Artisan: Changes"
+			],
+			[
+				"laravel",
+				"Laravel Artisan: List"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"task",
+				"Tasks: New document"
+			],
+			[
+				"emmet",
+				"Emmet: Expand Abbreviation"
+			],
+			[
+				"preferencesk u",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"html",
+				"Snippet: html"
+			],
+			[
+				"snippet:ht	",
+				"Snippet: html"
+			],
+			[
+				"folder",
+				"Project: Add Folder"
+			],
+			[
+				"project",
+				"Project: Save As"
+			],
+			[
+				"DECON",
+				"Package Decontrol: Install From Github"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"tasks",
+				"Tasks: New document"
+			],
+			[
+				"pacakge",
+				"Package Control: Remove Package"
+			],
+			[
+				"find",
+				"FindKeyConflicts: All Conflicts"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"enabl",
+				"Package Control: Enable Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"snippets	",
+				"Snippet: <?php $this->… ?>"
+			],
+			[
+				"xiki",
+				"Create Xiki Buffer"
+			],
+			[
+				"package cont",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"keybin",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"default",
+				"Preferences: Settings - Default"
+			],
+			[
+				"larave",
+				"Set Syntax: PHP - Laravel Blade"
+			],
+			[
+				"syntax: blade",
+				"Set Syntax: PHP - Laravel Blade"
+			],
+			[
+				"cancel",
+				"Tasks: Cancel"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syntax: c",
+				"Set Syntax: C#"
+			],
+			[
+				"synta",
+				"Set Syntax: Groovy"
+			],
+			[
+				"git stu",
+				"Git: Status"
+			],
+			[
+				"git log",
+				"Git: Log All"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"git commit",
+				"Git: Commit"
+			],
+			[
+				"git add .",
+				"Git: Add..."
+			],
+			[
+				"git i",
+				"Git: Init"
+			],
+			[
+				"init",
+				"Git: Init"
+			],
+			[
+				"packa in",
+				"Package Control: Install Package"
+			],
+			[
+				"package remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"git",
+				"Git: Commit history"
+			],
+			[
+				"git ini",
+				"Git: Init"
+			],
+			[
+				"git in",
+				"Git: Init"
+			]
+		],
+		"width": 386.0
+	},
+	"console":
+	{
+		"height": 146.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Apache2.2/htdocs/twitstrap/app/views/layouts/master.blade.php",
+		"/C/Apache2.2/htdocs/twitstrap/app/controllers/BaseController.php",
+		"/C/Apache2.2/htdocs/subafaq/app/controllers/BaseController.php",
+		"/C/Apache2.2/htdocs/subafaq/public/vendors/suba/custom.less.css",
+		"/C/Users/suba/AppData/Roaming/Sublime Text 2/Packages/User/Fetch.sublime-settings",
+		"/C/Apache2.2/htdocs/subafaq/app/config/app.php",
+		"/C/Users/suba/AppData/Roaming/Sublime Text 2/Packages/PlainTasks-master/tasks.hidden-tmTheme",
+		"/C/Users/suba/Desktop/mytasks.TODO",
+		"/C/Users/suba/Desktop/VEDU.TODO",
+		"/C/Users/suba/AppData/Roaming/Sublime Text 2/Packages/User/PlainTasks.sublime-settings",
+		"/C/Users/suba/AppData/Roaming/Sublime Text 2/Packages/PlainTasks/PlainTasks (Windows).sublime-settings",
+		"/C/Apache2.2/htdocs/subafaq/composer.json",
+		"/C/Users/suba/Desktop/SublimeText2Tips.TODO",
+		"/C/Users/suba/Desktop/nirvaga.TODO",
+		"/C/Users/suba/Desktop/laravel4guide.TODO",
+		"/D/development/NADIChennai/reference/tasks.TODO",
+		"/C/Apache2.2/htdocs/subafaq/app/config/database.php",
+		"/C/Apache2.2/htdocs/twitstrap/app/config/app.php",
+		"/C/Apache2.2/htdocs/twitstrap/composer.json",
+		"/C/Apache2.2/htdocs/twitstrap/app/routes.php",
+		"/C/Apache2.2/htdocs/twitstrap/app/views/handsons/about.blade.php",
+		"/C/Apache2.2/htdocs/twitstrap/app/controllers/HandsonsController.php",
+		"/C/Apache2.2/htdocs/twitstrap/app/views/layouts/layout.blade.php",
+		"/C/Apache2.2/htdocs/twitstrap/app/views/handsons/products.blade.php",
+		"/C/Apache2.2/htdocs/twitstrap/app/views/handsons/product.blade.php",
+		"/C/Apache2.2/htdocs/twitstrap/public/vendors/suba/css/custom.css",
+		"/C/Apache2.2/htdocs/twitstrap/public/vendors/suba/css/custom.less",
+		"/C/Apache2.2/htdocs/twitstrap/app/views/handsons/index.blade.php",
+		"/C/Apache2.2/htdocs/twitstrap/app/controllers/IndexController.php",
+		"/C/Apache2.2/conf/extra/httpd-vhosts.conf",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Apache2.2/htdocs/twitstrap/public/vendors/suba/css/custom.less.css",
+		"/C/Apache2.2/htdocs/twitstrap/app/views/accordion.blade.php",
+		"/C/Apache2.2/htdocs/twitstrap/app/views/breadcrumb.blade.php",
+		"/C/Apache2.2/htdocs/twitstrap/app/views/label.blade.php",
+		"/C/Apache2.2/htdocs/twitstrap/app/views/alert.blade.php",
+		"/C/Apache2.2/htdocs/twitstrap/app/views/layouts/layout-footer.blade.php",
+		"/C/Apache2.2/htdocs/twitstrap/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+		"/C/Apache2.2/htdocs/twitstrap/vendor/laravel/framework/src/Illuminate/Routing/Route.php",
+		"/C/Apache2.2/htdocs/twitstrap/app/controllers/Hands-onsController.php",
+		"/C/Apache2.2/htdocs/twitstrap/public/vendors/suba/custom.css",
+		"/C/Apache2.2/htdocs/twitstrap/app/views/hands-ons/index.blade.php",
+		"/C/Apache2.2/htdocs/twitstrap/vendor/laravel/framework/src/Illuminate/Html/HtmlBuilder.php",
+		"/C/Apache2.2/htdocs/twitstrap/readme.md",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/config/app.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/composer.json",
+		"/C/Apache2.2/htdocs/twitstrap/app/views/scrollspy.blade.php",
+		"/C/Apache2.2/htdocs/twitstrap/app/views/navigate.blade.php",
+		"/C/Apache2.2/htdocs/twitstrap/app/views/button-group.blade.php",
+		"/C/Apache2.2/htdocs/twitstrap/app/views/table.blade.php",
+		"/C/Apache2.2/htdocs/twitstrap/app/views/form.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/views/default.blade.php",
+		"/C/Apache2.2/htdocs/twitstrap/app/views/form.blade.html",
+		"/C/Apache2.2/htdocs/twitstrap/app/views/form-layout.blade.php",
+		"/C/Apache2.2/htdocs/twitstrap/app/views/form00.blade.html",
+		"/C/Apache2.2/htdocs/twitstrap/app/views/home.blade.php",
+		"/C/Apache2.2/htdocs/twitstrap/app/views/typography.blade.php",
+		"/C/Apache2.2/htdocs/twitstrap/app/views/form01.blade.php",
+		"/C/Apache2.2/htdocs/twitstrap/app/views/buttons.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/routes.php",
+		"/C/Apache2.2/htdocs/twitstrap/public/vendors/jquery/jquery.js",
+		"/C/Users/suba/Desktop/myfirstlaravel.TODO",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/views/questions/search.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/controllers/IndexController.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/controllers/QuestionsController.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/views/_partials/form_question.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/views/questions/show.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/views/questions/index.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/views/questions/edit.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/views/questions/create.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/views/questions/form_question.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/views/questions/_list.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/views/users/create.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/views/users/edit.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/views/users/index.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/views/users/login.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/views/users/form_login.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/views/users/form_register.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/views/_partials/error.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/views/users/show.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/views/index.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/vendor/laravel/framework/src/Illuminate/Html/FormBuilder.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/controllers/BaseController.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/views/_partials/form_login.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/views/_partials/title.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/views/_partials/form_register.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/views/_partials/form_login.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/views/answers/create.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/views/answers/edit.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/views/answers/index.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/views/answers/show.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/controllers/UsersController.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/models/User.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/controllers/AnswersController.php",
+		"/C/Users/suba/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/suba/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Apache2.2/htdocs/lvlsnappy/public/css/main.css",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/views/layouts/default.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnipp/app/views/snippets/index.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnipp/app/views/snippets/show.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/database/migrations/2013_08_07_132120_create_users_table.php",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/views/layouts",
+		"/C/Apache2.2/htdocs/lvlsnappy/app/config/database.php",
+		"/C/Apache2.2/htdocs/lvlsnipp/app/config/app.php",
+		"/C/Apache2.2/htdocs/lvlsnipp/composer.json",
+		"/C/Apache2.2/htdocs/lvlsnipp/app/config/database.php",
+		"/C/Apache2.2/htdocs/lvlsnipp/vendor/laravel/framework/src/Illuminate/Html/FormBuilder.php",
+		"/C/Apache2.2/htdocs/lvlsnipp/public/css/main.css",
+		"/C/Apache2.2/htdocs/lvlsnipp/app/views/snippets/create.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnipp/app/views/master.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnipp/vendor/laravel/framework/src/Illuminate/Html/HtmlBuilder.php",
+		"/C/Apache2.2/htdocs/lvlsnipp/vendor/laravel/framework/src/Illuminate/Routing/Redirector.php",
+		"/C/Apache2.2/htdocs/lvlsnipp/app/models/Snippet.php",
+		"/C/Apache2.2/htdocs/lvlsnipp/app/controllers/SnippetsController.php",
+		"/C/Apache2.2/htdocs/lvlsnipp/public/css/vendors/bootstrap.css",
+		"/C/Apache2.2/htdocs/lvlsnipp/app/routes.php",
+		"/C/Apache2.2/htdocs/lvlsnipp/app/views/snippets/duplicate.blade.php",
+		"/C/Apache2.2/htdocs/lvlcontacts/app/views/contacts/index.blade.php",
+		"/C/Apache2.2/htdocs/lvlsnipp/public/js/vendors/google-code-prettify/prettify.css",
+		"/C/Apache2.2/htdocs/lvlsnipp/public/js/jquery.js",
+		"/C/Apache2.2/htdocs/lvlsnipp/public/js/vendors/tabby.js",
+		"/C/Apache2.2/htdocs/lvlcontacts/app/views/contacts/edit.blade.php",
+		"/C/Apache2.2/htdocs/lvlcontacts/app/controllers/ContactsController.php",
+		"/C/Apache2.2/htdocs/lvlsnipp/app/database/migrations/2013_08_06_065345_create_snippets_table.php",
+		"/C/Apache2.2/htdocs/lvlsnipp/vendor/laravel/framework/src/Illuminate/Routing/Route.php",
+		"/C/Apache2.2/htdocs/lvlcontacts/app/views/contacts/create.blade.php",
+		"/C/Users/suba/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Apache2.2/htdocs/lvl4/composer.json"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"specific",
+			"OCC",
+			"Data",
+			"\n ",
+			"class=\"row\"",
+			"data-target",
+			"h3",
+			"product",
+			"small",
+			"h3",
+			"my",
+			"paging",
+			"handsons/product",
+			"products",
+			"resourceDefaults",
+			"getResourceMethods",
+			"resourceDefaults",
+			"getResourceMethods",
+			"products",
+			"-->",
+			"name",
+			"misc",
+			"\n		",
+			"label",
+			"alert",
+			"label",
+			"breadcrumb",
+			"table",
+			"table1",
+			"table",
+			"table1",
+			"link",
+			"Nav",
+			"link",
+			"typography",
+			"');",
+			"typography",
+			"typogra",
+			"typography",
+			"typebutton",
+			"th",
+			"Unorder",
+			"btn-succ",
+			"btn",
+			"duplicate",
+			"profile",
+			"contact",
+			"last_name",
+			"first_name",
+			"Form",
+			"]",
+			"[",
+			"Subramaniam",
+			"la,st",
+			"Route",
+			"group",
+			"mysql",
+			"form",
+			"ctrl+n",
+			"This",
+			"this",
+			"This",
+			"Testing",
+			"width",
+			"color",
+			"showWelcome",
+			"('/')->",
+			"\n	",
+			"posts",
+			".dll",
+			"extensions",
+			"php.ini",
+			"php",
+			"pdo_mysql",
+			"testing",
+			"test",
+			"thing",
+			"rewrite",
+			"httpd-vhosts",
+			"virtual host",
+			"apache.suba",
+			"php",
+			"localhost",
+			"php",
+			"adhandler",
+			"test",
+			"down",
+			"sathi",
+			"nalla",
+			"nammavar",
+			"test",
+			"application",
+			"application\n",
+			"\n",
+			"Testing",
+			"Very",
+			"PerBatchTotalBytes",
+			"mb",
+			"PerBatchProfileLimit",
+			"TotalBatch",
+			"Counter",
+			"APBBatch",
+			"HWNumber",
+			"PerBatchTotalBytes",
+			"TotalAPBBytes",
+			"INSERT",
+			"ff00 5aa5 0055",
+			"•	",
+			"object {string}"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"CurrentBatch",
+			"PerBatchTotalBytes",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/routes.php",
+					"settings":
+					{
+						"buffer_size": 77,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								35,
+								35
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/layouts/master.blade.php",
+					"settings":
+					{
+						"buffer_size": 652,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								457,
+								457
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/controllers/IndexController.php",
+					"settings":
+					{
+						"buffer_size": 208,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								202,
+								202
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/index.blade.php",
+					"settings":
+					{
+						"buffer_size": 53,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								50,
+								50
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/controllers/BaseController.php",
+					"settings":
+					{
+						"buffer_size": 528,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								368,
+								368
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 5,
+					"file": "/C/Users/suba/Desktop/SublimeText2Tips.TODO",
+					"settings":
+					{
+						"buffer_size": 2416,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								30,
+								30
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PlainTasks-master/PlainTasks.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/Users/suba/Desktop/nirvaga.TODO",
+					"settings":
+					{
+						"buffer_size": 3476,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PlainTasks-master/PlainTasks.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/C/Users/suba/Desktop/myfirstlaravel.TODO",
+					"settings":
+					{
+						"buffer_size": 447,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PlainTasks-master/PlainTasks.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/C/Users/suba/Desktop/GettingGoodWithPHP.TODO",
+					"settings":
+					{
+						"buffer_size": 387,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PlainTasks-master/PlainTasks.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/C/Users/suba/Desktop/laravel4guide.TODO",
+					"settings":
+					{
+						"buffer_size": 781,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PlainTasks-master/PlainTasks.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/C/Users/suba/Desktop/jokes.TODO",
+					"settings":
+					{
+						"buffer_size": 681,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								484,
+								484
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PlainTasks-master/PlainTasks.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				2,
+				0,
+				3,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0,
+			1.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.exec":
+	{
+		"height": 336.0
+	},
+	"output.git":
+	{
+		"height": 118.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"master",
+				"twitstrap/app/views/layouts/master.blade.php"
+			],
+			[
+				"base",
+				"subafaq/app/controllers/BaseController.php"
+			],
+			[
+				"basecontroller",
+				"subafaq/app/controllers/BaseController.php"
+			],
+			[
+				"twitbasecont",
+				"twitstrap/app/controllers/BaseController.php"
+			],
+			[
+				"config/app",
+				"subafaq/app/config/app.php"
+			],
+			[
+				".json",
+				"subafaq/composer.json"
+			],
+			[
+				"app/route",
+				"subafaq/app/routes.php"
+			],
+			[
+				"product.",
+				"app/views/handsons/product.blade.php"
+			],
+			[
+				"products",
+				"app/views/handsons/products.blade.php"
+			],
+			[
+				"footer",
+				"app/views/layouts/layout-footer.blade.php"
+			],
+			[
+				"route",
+				"vendor/laravel/framework/src/Illuminate/Routing/Router.php"
+			],
+			[
+				"routes.php",
+				"app/routes.php"
+			],
+			[
+				"hand",
+				"app/controllers/Hands-onsController.php"
+			],
+			[
+				"custom",
+				"public/vendors/suba/css/custom.css"
+			],
+			[
+				"handsons/in",
+				"app/views/handsons/index.blade.php"
+			],
+			[
+				"basecon",
+				"app/controllers/BaseController.php"
+			],
+			[
+				"htmlbuil",
+				"vendor/laravel/framework/src/Illuminate/Html/HtmlBuilder.php"
+			],
+			[
+				"hands/inde",
+				"app/views/hands-ons/index.blade.php"
+			],
+			[
+				"hands",
+				"app/controllers/HandsonsController.php"
+			],
+			[
+				"composer",
+				"composer.json"
+			],
+			[
+				"button",
+				"app/views/button.blade.php"
+			],
+			[
+				"htmlbui",
+				"vendor/laravel/framework/src/Illuminate/Html/HtmlBuilder.php"
+			],
+			[
+				"views/he",
+				"app/views/hello.php"
+			],
+			[
+				"error",
+				"app/views/_partials/error.blade.php"
+			],
+			[
+				"views/inde",
+				"app/views/index.blade.php"
+			],
+			[
+				"formbuil",
+				"vendor/laravel/framework/src/Illuminate/Html/FormBuilder.php"
+			],
+			[
+				"form_que",
+				"app/views/_partials/form_question.blade.php"
+			],
+			[
+				"questioncon",
+				"app/controllers/QuestionsController.php"
+			],
+			[
+				"search",
+				"app/views/questions/search.blade.php"
+			],
+			[
+				"questionscon",
+				"app/controllers/QuestionsController.php"
+			],
+			[
+				"ques/ind",
+				"app/views/questions/index.blade.php"
+			],
+			[
+				"users/create",
+				"app/views/users/create.blade.php"
+			],
+			[
+				"users/login",
+				"app/views/users/login.blade.php"
+			],
+			[
+				"userscon",
+				"app/controllers/UsersController.php"
+			],
+			[
+				"answersc",
+				"app/controllers/AnswersController.php"
+			],
+			[
+				"views/in",
+				"app/views/index.blade.php"
+			],
+			[
+				"/title",
+				"app/views/_partials/title.blade.php"
+			],
+			[
+				"_parti/e",
+				"app/views/_partials/error.blade.php"
+			],
+			[
+				"questionsc",
+				"app/controllers/QuestionsController.php"
+			],
+			[
+				"title",
+				"app/views/_partials/title.blade.php"
+			],
+			[
+				"basecontro",
+				"app/controllers/BaseController.php"
+			],
+			[
+				"default",
+				"app/views/layouts/default.blade.php"
+			],
+			[
+				"controllers/user",
+				"app/controllers/UsersController.php"
+			],
+			[
+				"controllers/index",
+				"app/controllers/index.php"
+			],
+			[
+				"models/user",
+				"app/models/User.php"
+			],
+			[
+				"users",
+				"app/controllers/UsersController.php"
+			],
+			[
+				"migration/user",
+				"app/database/migrations/2013_08_07_132120_create_users_table.php"
+			],
+			[
+				"model/user",
+				"app/models/User.php"
+			],
+			[
+				"routes",
+				"app/routes.php"
+			],
+			[
+				"config/data",
+				"app/config/database.php"
+			],
+			[
+				"main",
+				"public/css/main.css"
+			],
+			[
+				"formbuild",
+				"vendor/laravel/framework/src/Illuminate/Html/FormBuilder.php"
+			],
+			[
+				"bootsa",
+				"public/css/vendors/bootstrap.css"
+			],
+			[
+				"boots",
+				"public/css/vendors/bootstrap.css"
+			],
+			[
+				"redire",
+				"vendor/laravel/framework/src/Illuminate/Routing/Redirector.php"
+			],
+			[
+				"create.",
+				"app/views/snippets/create.blade.php"
+			],
+			[
+				"/config/app",
+				"app/config/app.php"
+			],
+			[
+				"/config/a",
+				"app/config/app.php"
+			],
+			[
+				"prett",
+				"public/js/vendors/google-code-prettify/prettify.css"
+			],
+			[
+				"app/config/data",
+				"app/config/database.php"
+			],
+			[
+				"/views/snipp",
+				"app/views/snippets/show.blade.php"
+			],
+			[
+				"snippetcon",
+				"app/controllers/SnippetsController.php"
+			],
+			[
+				"model/",
+				"app/models/Snippet.php"
+			],
+			[
+				"redirect",
+				"vendor/laravel/framework/src/Illuminate/Routing/Redirector.php"
+			],
+			[
+				"route.",
+				"vendor/laravel/framework/src/Illuminate/Routing/Route.php"
+			],
+			[
+				"controller/snip",
+				"app/controllers/SnippetsController.php"
+			],
+			[
+				"view/snipp",
+				"app/views/snippets/index.blade.php"
+			],
+			[
+				"database",
+				"app/config/database.php"
+			],
+			[
+				"model/sni",
+				"app/models/Snippet.php"
+			],
+			[
+				"migration/",
+				"app/database/migrations/2013_08_06_065345_create_snippets_table.php"
+			],
+			[
+				"database.",
+				"app/config/database.php"
+			],
+			[
+				"app/app",
+				"app/config/app.php"
+			],
+			[
+				"compo",
+				"composer.json"
+			],
+			[
+				"compose",
+				"composer.json"
+			],
+			[
+				"html",
+				"vendor/laravel/framework/src/Illuminate/Html/HtmlBuilder.php"
+			],
+			[
+				"urlgene",
+				"vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php"
+			],
+			[
+				"htmlb",
+				"vendor/laravel/framework/src/Illuminate/Html/HtmlBuilder.php"
+			],
+			[
+				"facades/in",
+				"vendor/laravel/framework/src/Illuminate/Support/Facades/Input.php"
+			],
+			[
+				"eloquent/model",
+				"vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php"
+			],
+			[
+				"contact/edit",
+				"app/views/contacts/edit.blade.php"
+			],
+			[
+				"model/con",
+				"app/models/Contact.php"
+			],
+			[
+				"contacts/inde",
+				"app/views/contacts/index.blade.php"
+			],
+			[
+				"contactsco",
+				"app/controllers/ContactsController.php"
+			],
+			[
+				"migratins/create",
+				"app/database/migrations/2013_08_05_110818_create_contacts_table.php"
+			],
+			[
+				"seed",
+				"vendor/laravel/framework/src/Illuminate/Database/Seeder.php"
+			],
+			[
+				"createcont",
+				"app/database/migrations/2013_08_05_110818_create_contacts_table.php"
+			],
+			[
+				"app/config/app",
+				"app/config/app.php"
+			],
+			[
+				"home/inded",
+				"app/views/home/index.blade.php"
+			],
+			[
+				"lara",
+				"/C/Users/suba/Desktop/laravel4guide.TODO"
+			],
+			[
+				"/view/index",
+				"app/views/home/index.blade.php"
+			],
+			[
+				"photscon",
+				"app/controllers/PhotosController.php"
+			],
+			[
+				"tablesee",
+				"app/database/seeds/PhotosTableSeeder.php"
+			],
+			[
+				"/controller/pho",
+				"app/controllers/Photos.php"
+			],
+			[
+				"app/database/see",
+				"app/database/seeds/DatabaseSeeder.php"
+			],
+			[
+				"app.php",
+				"app/config/app.php"
+			],
+			[
+				"composer.j",
+				"composer.json"
+			],
+			[
+				"createtablepost",
+				"app/database/migrations/2013_08_01_155224_create_table_posts.php"
+			],
+			[
+				"app/config/",
+				"app/config/app.php"
+			],
+			[
+				"app/config",
+				"app/config/app.php"
+			],
+			[
+				"/app",
+				"app/config/app.php"
+			],
+			[
+				"public/",
+				"public/index.php"
+			],
+			[
+				"app/",
+				"app/config/app.php"
+			],
+			[
+				"app/rout",
+				"app/routes.php"
+			],
+			[
+				"auth",
+				"app/config/auth.php"
+			],
+			[
+				"jo",
+				"/C/Users/suba/Desktop/jokes.TODO"
+			],
+			[
+				"task",
+				"/D/development/NADIChennai/reference/tasks.TODO"
+			],
+			[
+				"url",
+				"app/models/url.php"
+			],
+			[
+				"home",
+				"app/controllers/HomeController.php"
+			],
+			[
+				"joke",
+				"/C/Users/suba/Desktop/jokes.TODO"
+			],
+			[
+				"url.php",
+				"app/models/url.php"
+			],
+			[
+				"composer.",
+				"composer.json"
+			],
+			[
+				"model/u",
+				"app/models/url.php"
+			],
+			[
+				"model/ur",
+				"app/models/url.php"
+			],
+			[
+				"model/url",
+				"app/models/url.php"
+			],
+			[
+				"quer",
+				"vendor/doctrine/dbal/lib/Doctrine/DBAL/Query/QueryBuilder.php"
+			],
+			[
+				"data",
+				"app/config/database.php"
+			],
+			[
+				"my",
+				"/C/Users/suba/Desktop/mytasks.TODO"
+			],
+			[
+				"inde",
+				"index.php"
+			],
+			[
+				"nadi",
+				"NADI Chennai"
+			],
+			[
+				"config/ma",
+				"protected/config/main.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Apache2.2/htdocs/lvlsnappy/lvlsnappy.sublime-project"
+			],
+			[
+				"snapp",
+				"/C/Apache2.2/htdocs/lvlsnappy/lvlsnappy.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 291.0,
+	"status_bar_visible": true
+}

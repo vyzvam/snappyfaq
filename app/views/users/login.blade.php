@@ -5,7 +5,7 @@
 		<div class="control-group">						
 			<label for="username" class="control-label">Username</label>
 			<div class="controls">
-			{{ Form::text('username') }}				
+			{{ Form::text('username', Inpu::old('username')) }}				
 			</div>
 		</div>
 

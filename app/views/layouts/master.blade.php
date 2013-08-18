@@ -25,7 +25,10 @@
 	<div class="container">
 		<h2>{{ $pageTitle }}</h4>		
 
-		@include('layouts.message')
+		@if (Session::has('messageType'))
+			@include('layouts.'.Session::get('messageType'))
+		@endif
+
 		@yield('content')
 
 	</div>

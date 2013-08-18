@@ -27,13 +27,13 @@ class UsersController extends BaseController {
 	 */
 	public function create()
 	{
-		$this->ShowLayoutWithTitle(View::make('users.create'), 'Register', $this->pageTitles['index']);
+		$this->ShowLayoutWithTitle(View::make('users.create'), 'Register', $this->pageTitles['create']);
 	}
 
 	public function store()
 	{
-		$user = new User();
 
+		$user = new User();
 
 		$validation = Validator::make(Input::all(), $user->rules);
 
@@ -44,16 +44,15 @@ class UsersController extends BaseController {
 
 			$user->save();
 
-			$this->ShowLayoutWithTitle(
-				View::make('users.create')->with('messsage', 'You have registered Successfuly'), 
-				'Register',
-				$this->pageTitles['index']
-			);
+			return Redirect::route('users.create')->with('message', 'You have registered Successfuly')
+												  ->with('messageType', 'success');
 		}	
 
 		else 
 		{
-			return Redirect::back()->withInput()->withErrors($validation->messages());
+			return Redirect::back()->withInput()
+								   ->withErrors($validation->messages())
+								   ->with('messageType', 'error');
 		}
 	}
 

@@ -1,11 +1,12 @@
 @section('content')
 
+	
 	{{ Form::open(array('method' => 'post', 'route' => 'users.store', 'class' => 'form-horizontal')) }}
 		
 		<div class="control-group">						
 			<label for="username" class="control-label">Username</label>
 			<div class="controls">
-			{{ Form::text('username', null, array('id' => 'username')) }}
+			{{ Form::text('username', Input::old('username'), array('id' => 'username')) }}
 			</div>
 		</div>
 

@@ -16,19 +16,21 @@
 
 <body>
 
-	<div class="content">
+	<div class="container">
 		
 		@include('layouts.header')
 
 	</div>
 
-	<div class="content">
-		
+	<div class="container">
+		<h2>{{ $pageTitle }}</h4>		
+
+		@include('layouts.message')
 		@yield('content')
 
 	</div>
 
-	<div class="content">
+	<div class="container">
 		
 		@include('layouts.footer')
 	

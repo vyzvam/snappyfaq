@@ -2,6 +2,11 @@
 
 class IndexController extends BaseController {
 
+	private $pageTitles = array 
+	(
+		'index' => 'Unsolved Questions'
+	);
+
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -9,7 +14,7 @@ class IndexController extends BaseController {
 	 */
 	public function index()
 	{
-		$this->showLayoutWithtitle(View::make('index'));
+		$this->showLayoutWithTitle(View::make('index'), null, $pageTitles['index']);
 	}
 
 }

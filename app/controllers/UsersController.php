@@ -44,8 +44,9 @@ class UsersController extends BaseController {
 
 			$user->save();
 
-			return Redirect::route('users.create')->with('message', 'You have registered Successfuly')
-												  ->with('messageType', 'success');
+			return Redirect::route('users.create')
+							->with('message', $user->username . ' have been registered successfuly!')
+							->with('messageType', 'success');
 		}	
 
 		else 
@@ -63,7 +64,25 @@ class UsersController extends BaseController {
 
 	public function loginAttempt()
 	{
+		$username = Input::get('username');
+		
+		$user = array
+		(
+			'username' => $username,
+			'password' => Input::get('password')
+		);
 
+		if (Auth::attempt($user))
+		{
+			return Redirect::Route('index')->with('message', "Good day $username")
+										   ->with('messageType', 'success');
+		}
+		else
+		{
+			return Redirect::Back()->withInput()
+								   ->with('message', 'Your username/password combination is incorrect')
+							       ->with('messageType', 'error');
+		}
 	}
 
 

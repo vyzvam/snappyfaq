@@ -1,12 +1,6 @@
 <?php
 
-class QuestionsController extends BaseController {
-
-	private $pageTitles = array 
-	(
-		'index' => 'My Questions',
-		'create' => 'Post new question',		
-	);
+class AnswersController extends BaseController {
 
 	/**
 	 * Display a listing of the resource.
@@ -15,11 +9,7 @@ class QuestionsController extends BaseController {
 	 */
 	public function index()
 	{
-		$this->showLayoutWithTitle(
-			View::make('questions.index')->with('questions', Question::ByUser(Auth::User()->id)),
-			'Questions',
-			$this->pageTitles['index']
-		);
+		//
 	}
 
 	/**

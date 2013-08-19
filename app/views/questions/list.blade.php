@@ -6,8 +6,24 @@
 		<tbody>
 			@foreach ($questions as $question)
 				<tr>
-					<td> {{ $question->question}} </td>
-					<td> {{ $question->user->username}} </td>
+					<td> 
+						{{ HTML::linkRoute('questions.show', $question->question, $question->id) }} 
+						({{ count($question->answers) }}) {{ Str::plural('Answer', count($question->answers))}}
+					</td>
+
+					<td>
+						@if ($question->solved)
+							Solved
+						@endif
+					</td>
+
+					<td> 
+						{{ $question->user->username}} 
+	
+						@if (Auth::check() && Auth::user()->id == $question->user_id)
+							({{ HTML::linkRoute('questions.edit', 'Edit this question', $question->id) }})
+						@endif
+					</td>
 				</tr>
 				
 			@endforeach

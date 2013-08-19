@@ -74,7 +74,7 @@ class UsersController extends BaseController {
 
 		if (Auth::attempt($user))
 		{
-			return Redirect::Route('index')->with('message', "Good day $username")
+			return Redirect::Route('questions.index')->with('message', "Good day $username")
 										   ->with('messageType', 'success');
 		}
 		else
@@ -85,7 +85,18 @@ class UsersController extends BaseController {
 		}
 	}
 
+	public function logout()
+	{
+		if (Auth::check())
+		{
+			Auth::logout();
+			return Redirect::route('users.login')->with('message', 'You have logged out successfuly!')
+										   ->with('messageType', 'success');		
+		}
+		
+		return Redirect::route('index');
 
+	}
 	/**
 	 * Display the specified resource.
 	 *

@@ -1,1 +1,5 @@
-index.blade
+@section('content')
+
+	@include('questions.list')	
+
+@endsection

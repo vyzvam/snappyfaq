@@ -9,25 +9,25 @@
 
 				<li class="divider-horizontal"></li>
 				<li class="active">
-					{{ HTML::link('/', 'Home', array('tabindex' => '-1')) }}
+					{{ HTML::linkRoute('index', 'Home', null, array('tabindex' => '-1')) }}
 				</li>
 
 			
 				@if (Auth::check())
 					<li>
-						{{ HTML::link('questions/index', 'My Qs', array('tabindex' => '-1')) }}
+						{{ HTML::linkRoute('questions.index', 'My Qs', null, array('tabindex' => '-1')) }}
 					</li>
 
 					<li>
-						{{ HTML::link('users/logout', 'logout (' . Auth::user()->username . ')', array('tabindex' => '-1')) }}
+						{{ HTML::linkRoute('users.logout', 'logout (' . Auth::user()->username . ')', null, array('tabindex' => '-1')) }}
 					</li>
 				@else
 					<li>
-						{{ HTML::link('users/create', 'Register', array('tabindex' => '-1')) }}
+						{{ HTML::linkRoute('users.create', 'Register', null, array('tabindex' => '-1')) }}
 					</li>
 
 					<li>
-						{{ HTML::link('login', 'Login', array('tabindex' => '-1')) }}
+						{{ HTML::linkRoute('users.login', 'Login', null, array('tabindex' => '-1')) }}
 					</li>
 				@endif	
 

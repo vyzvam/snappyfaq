@@ -9,3 +9,6 @@ Route::get('login', array('as' => 'users.login', 'uses' => 'UsersController@logi
 Route::post('login_attempt', array('as' => 'users.login_attempt', 'uses' => 'UsersController@loginAttempt'));
 
 Route::resource('users', 'UsersController');
+
+
+Route::resource('questions', 'QuestionsController');

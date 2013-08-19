@@ -14,8 +14,8 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 		'password_confirmation' => 'required|alphaNum|between:4,8',
 	);
 
-	public function questions() { $this->hasMany('Question'); }
-	public function answers() { $this->hasMany('Answer'); }
+	public function questions() { return $this->hasMany('Question'); }
+	public function answers() { return $this->hasMany('Answer'); }
 
 
 	/**

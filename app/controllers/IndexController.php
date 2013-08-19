@@ -14,7 +14,9 @@ class IndexController extends BaseController {
 	 */
 	public function index()
 	{
-		$this->showLayoutWithTitle(View::make('index'), null, $this->pageTitles['index']);
+		$this->showLayoutWithTitle(
+				View::make('index')->with('questions', Question::unsolved()), 
+				null, $this->pageTitles['index']);
 	}
 
 }

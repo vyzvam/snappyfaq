@@ -6,9 +6,10 @@
 	</blockquote>
 
 	<hr />
-	
 
-	@include('answers.list')
+
+	@yield('contentSub')
+
 	@include('answers.form_answer')
 	
 

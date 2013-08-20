@@ -15,15 +15,20 @@ class Question extends BaseModel {
 
 	public static function byUser($id)
 	{
-		return static::whereUserId($id)->orderBy('id', 'DESC')->paginate(5);
+		return static::whereUserId($id)->orderBy('id', 'DESC')->paginate(10);
 	}
 	public static function unsolved()
 	{
-		return static::whereSolved('0')->orderBy('id', 'DESC')->paginate(5);
+		return static::whereSolved('0')->orderBy('id', 'DESC')->paginate(10);
 	}
 
 	public static function filter($keyword)
 	{
-		return static::where('question', 'LIKE', '%'.$keyword.'%')->orderBy('id', 'DESC')->paginate(5);
+		return static::where('question', 'LIKE', '%'.$keyword.'%')->orderBy('id', 'DESC')->paginate(10);
+	}
+
+	public function answersOrdered()
+	{
+		return $this->answers()->orderBy('id', 'DESC')->paginate(3);
 	}
 }

@@ -13,5 +13,6 @@ Route::get('logout', array('as' => 'users.logout', 'uses' => 'UsersController@lo
 
 
 Route::resource('questions', 'QuestionsController');
+Route::post('search', array('as' => 'questions.search', 'uses' => 'QuestionsController@search'));
 
 Route::resource('answers', 'AnswersController');

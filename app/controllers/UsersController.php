@@ -79,7 +79,7 @@ class UsersController extends BaseController {
 		}
 		else
 		{
-			return Redirect::Back()->withInput()
+			return Redirect::Route('users.login')->withInput()
 								   ->with('message', 'Your username/password combination is incorrect')
 							       ->with('messageType', 'error');
 		}

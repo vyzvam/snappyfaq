@@ -7,11 +7,12 @@ class QuestionsController extends BaseController {
 		'index' => 'My Questions',
 		'create' => 'Post new question',		
 		'edit' => 'Edit question',		
+		'search' => 'Search Results',		
 	);
 
 	public function __construct()
 	{
-		$this->beforeFilter('auth');
+		$this->beforeFilter('auth', array('except' => array('show', 'search')));
 	}
 
 	/**
@@ -25,6 +26,18 @@ class QuestionsController extends BaseController {
 			View::make('questions.index')->with('questions', Question::ByUser(Auth::User()->id)),
 			'Questions',
 			$this->pageTitles['index']
+		);
+	}
+
+	public function search()
+	{
+		$keyword = Input::get('keyword');
+		
+		$this->showLayoutWithTitle(
+			View::make('index')->with('questions', Question::filter($keyword)),
+			$this->pageTitles['search'],
+			$this->pageTitles['search']
+
 		);
 	}
 
@@ -82,9 +95,12 @@ class QuestionsController extends BaseController {
 	 */
 	public function show($id)
 	{
-		$this->showLayoutWithTitle(
-			View::make('questions.show')->with('question', Question::find($id))
-		);
+		$question = Question::find($id);
+
+		$answerListView = View::make('answers.list')->with('answers', $question->answersOrdered());
+		$showView = View::make('questions.show')->with('question', $question);
+		$showView->contentSub = $answerListView;
+		$this->showLayoutWithTitle($showView);
 	}
 
 	/**
@@ -121,7 +137,19 @@ class QuestionsController extends BaseController {
 	 */
 	public function update($id)
 	{
-		//
+		$q = Question::find($id);
+
+		$q->question = Input::get('question');
+		$q->solved = Input::get('solved', function () {return 0;});
+
+		if ($q->save())
+		{
+			return Redirect::route('questions.edit', $id)->with('message', $this->pageTitles['update'])
+														 ->with('messageType', 'success');
+		}
+
+		return Redirect::route('questions.edit', $id)->withErrors($q->messages)
+													->with('messageType', 'error');
 	}
 
 	/**

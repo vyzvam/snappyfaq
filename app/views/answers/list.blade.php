@@ -1,10 +1,11 @@
+@section('contentSub')
 
 	<h5>Answers</h5>
 	<table class="table table-striped table-hover table-condensed">
 		<tbody>
 
-			@if (count($question->answers) > 0)
-				@foreach ($question->answers as $a)
+			@if (count($answers) > 0)
+				@foreach ($answers as $a)
 					<tr>
 						<td> 
 							<blockquote>
@@ -22,6 +23,8 @@
 
 		</tbody>
 	</table>	
+	{{ $answers->links() }}
 
+@endsection
 
 

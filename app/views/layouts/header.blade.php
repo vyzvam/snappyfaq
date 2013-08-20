@@ -35,9 +35,17 @@
 				<li class="divider-horizontal"></li>
 			</ul>
 
-			<form action="" class="navbar-search pull-right">
-				<input type="text" class="search-query" placeholder="Search Questions...."></input>
-			</form>
+			{{ Form::open(
+				array('method' => 'post', 'route' => 'questions.search', 'class' => 'navbar-search pull-right')) 
+			}}
+				{{ Form::text('keyword', null, 
+								array('id' => 'keyword', 
+									  'class' => 'search-query', 
+									  'placeholder' => 'Search Questions....'
+					))
+				}}
+
+			{{ Form::close() }}
 
 		</div>
 	</div>

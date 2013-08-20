@@ -20,7 +20,7 @@
 		<div class="control-group">						
 			<label for="solved" class="control-label">Solved?</label>
 			<div class="controls">
-			{{ Form::checkbox('solved', Input::old('solved'), array('id' => 'solved')) }}
+			{{ Form::checkbox('solved', 1, null,  array('id' => 'solved')) }}
 			</div>
 		</div>
 

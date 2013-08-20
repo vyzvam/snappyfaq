@@ -11,7 +11,12 @@
 
 			{{ Form::hidden('question_id', $question->id) }}
 
-			{{ Form::submit('Save!', array('class' => 'btn btn-primary inline')) }}
+			{{ Form::submit('Save!', 
+							array('id' => 'btnSave',
+								'class' => 'btn btn-primary inline',
+								'data-loading-text' => 'Saving...'
+
+			)) }}
 
 	{{ Form::close() }}
 

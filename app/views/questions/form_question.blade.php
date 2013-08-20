@@ -28,8 +28,19 @@
 
 
 	<div class="control-group"><div class="controls">			
-		{{ Form::submit('Save!', array('class' => 'btn btn-primary')) }}
+		{{ Form::submit('Save!', 
+						array('id' => 'btnSave', 
+							  'class' => 'btn btn-primary', 
+							  'data-loading-text' => 'Saving...'
+						)) 
+		}}
+
 		{{ HTML::linkRoute('questions.index', 'Back', null, array('class' => 'btn')) }}
+
 	</div></div>
 
 	{{ Form::close() }}
+
+	<script>
+
+	</script>

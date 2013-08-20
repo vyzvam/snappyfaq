@@ -7,10 +7,11 @@
 
 			<ul class="nav">
 
-				<li class="divider-horizontal"></li>
-				<li class="active">
+				<li class="divider-vertical"></li>
+				<li>
 					{{ HTML::linkRoute('index', 'Home', null, array('tabindex' => '-1')) }}
 				</li>
+				<li class="divider-vertical"></li>
 
 				@if (Auth::check())
 		        <li class="dropdown">			            
@@ -30,6 +31,8 @@
 						</li>
 		            </ul>
 		        </li>
+
+				<li class="divider-vertical"></li>
 
 				@else
 					<li>
@@ -60,14 +63,23 @@
 		    <script>
 		      $(function() {
 
-		        $('ul.nav li.dropdown').hover(
-		          function () {
-		            $(this).children('.dropdown-menu').stop(true, true).delay(10).fadeIn();
-		          },
-		          function() {
-		            $(this).children('.dropdown-menu').stop(true, true).delay(500).fadeOut();
-		          }
-		        );
+			        $('ul.nav li.dropdown').hover(
+				          function () {
+				            $(this).children('.dropdown-menu').stop(true, true).delay(10).fadeIn();
+				          },
+				          function() {
+				            $(this).children('.dropdown-menu').stop(true, true).delay(500).fadeOut();
+				          }
+			        );
+
+					$(function() {
+						$('#btnSave').click(function() { $(this).button('loading'); });
+					});
+
+					$(function() {
+							$('#btnLogin').click(function() { $(this).button('loading'); });
+					});
+
 
 		      });
 		    </script>

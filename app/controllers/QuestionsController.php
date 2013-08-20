@@ -6,7 +6,13 @@ class QuestionsController extends BaseController {
 	(
 		'index' => 'My Questions',
 		'create' => 'Post new question',		
+		'edit' => 'Edit question',		
 	);
+
+	public function __construct()
+	{
+		$this->beforeFilter('auth');
+	}
 
 	/**
 	 * Display a listing of the resource.
@@ -29,7 +35,19 @@ class QuestionsController extends BaseController {
 	 */
 	public function create()
 	{
-		//
+		if ( Auth::check() ) 
+		{
+
+			$this->showLayoutWithTitle(
+					View::make('questions.create'),
+					'Edit Question',
+					$this->pageTitles['create']
+			);
+
+		} 
+
+		else return Redirect::route('index')->with('message', 'Please login to post a question')
+											->with('messageType', 'error');
 	}
 
 	/**
@@ -39,7 +57,21 @@ class QuestionsController extends BaseController {
 	 */
 	public function store()
 	{
-		//
+		$question = new Question(array(
+			'user_id' => Auth::user()->id,
+			'question' => Input::get('question'),
+			'solved' => '0'
+		));
+
+		if ($question->save())
+		{
+			return Redirect::route('questions.index')->with('message', 'You have posted your question successfuly!')
+													 ->with('messageType', 'success');
+		}
+
+		return Redirect::back()->withInput()
+							   ->withErrors($question->messages)
+							   ->with('messageType', 'error');
 	}
 
 	/**
@@ -50,7 +82,9 @@ class QuestionsController extends BaseController {
 	 */
 	public function show($id)
 	{
-		//
+		$this->showLayoutWithTitle(
+			View::make('questions.show')->with('question', Question::find($id))
+		);
 	}
 
 	/**
@@ -61,7 +95,22 @@ class QuestionsController extends BaseController {
 	 */
 	public function edit($id)
 	{
-		//
+		$question = Question::find($id);
+
+		if ( Auth::check() ) 
+		{
+			if ( Auth::user()->id == $question->user_id ) {
+
+				$this->showLayoutWithTitle(
+						View::make( 'questions.edit', compact('question') ),
+						'Edit Question',
+						$this->pageTitles['edit']
+				);
+			}
+			else return $this->Index();
+
+		} 
+		else return Redirect::route('index');
 	}
 
 	/**

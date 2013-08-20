@@ -1,27 +1,30 @@
 
 @if ($questions)
 	
+	@if (Auth::check())
+		{{ HTML::linkRoute('questions.create', 'Post a question', null, array('class' => 'btn btn-primary pull-right')) }}
+	@endif
 
 	<table class="table table-striped table-bordered table-hover table-condensed">
 		<tbody>
-			@foreach ($questions as $question)
+			@foreach ($questions as $q)
 				<tr>
 					<td> 
-						{{ HTML::linkRoute('questions.show', $question->question, $question->id) }} 
-						({{ count($question->answers) }}) {{ Str::plural('Answer', count($question->answers))}}
+						{{ HTML::linkRoute('questions.show', $q->question, $q->id) }} 
+						({{ count($q->answers) }}) {{ Str::plural('Answer', count($q->answers))}}
 					</td>
 
 					<td>
-						@if ($question->solved)
+						@if ($q->solved)
 							Solved
 						@endif
 					</td>
 
 					<td> 
-						{{ $question->user->username}} 
+						{{ $q->user->username}} 
 	
-						@if (Auth::check() && Auth::user()->id == $question->user_id)
-							({{ HTML::linkRoute('questions.edit', 'Edit this question', $question->id) }})
+						@if (Auth::check() && Auth::user()->id == $q->user_id)
+							({{ HTML::linkRoute('questions.edit', 'Edit this question', $q->id) }})
 						@endif
 					</td>
 				</tr>
@@ -31,6 +34,6 @@
 		</tbody>
 	</table>	
 
-
+	{{ $questions->links() }}
 
 @endif

@@ -19,4 +19,6 @@ class IndexController extends BaseController {
 				null, $this->pageTitles['index']);
 	}
 
+	
+
 }

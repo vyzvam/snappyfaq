@@ -12,15 +12,25 @@
 					{{ HTML::linkRoute('index', 'Home', null, array('tabindex' => '-1')) }}
 				</li>
 
-			
 				@if (Auth::check())
-					<li>
-						{{ HTML::linkRoute('questions.index', 'My Qs', null, array('tabindex' => '-1')) }}
-					</li>
+		        <li class="dropdown">			            
+		            <a href="" class="dropdown-toggle" data-toggle="dropdown">
+		            {{ Auth::user()->username }} <b class="caret"></b></a>
+		            <ul class="dropdown-menu">
+		                <li> 
+		                {{ HTML::linkRoute('questions.index', 'My Questions') }} 
+		                </li>
+		                
+		                <li> 
+		                {{ HTML::linkRoute('questions.create', 'Post Question') }}
+		                 </li>
+						
+						<li>
+						{{ HTML::linkRoute('users.logout', 'logout') }} 
+						</li>
+		            </ul>
+		        </li>
 
-					<li>
-						{{ HTML::linkRoute('users.logout', 'logout (' . Auth::user()->username . ')', null, array('tabindex' => '-1')) }}
-					</li>
 				@else
 					<li>
 						{{ HTML::linkRoute('users.create', 'Register', null, array('tabindex' => '-1')) }}
@@ -46,6 +56,21 @@
 				}}
 
 			{{ Form::close() }}
+
+		    <script>
+		      $(function() {
+
+		        $('ul.nav li.dropdown').hover(
+		          function () {
+		            $(this).children('.dropdown-menu').stop(true, true).delay(10).fadeIn();
+		          },
+		          function() {
+		            $(this).children('.dropdown-menu').stop(true, true).delay(500).fadeOut();
+		          }
+		        );
+
+		      });
+		    </script>
 
 		</div>
 	</div>

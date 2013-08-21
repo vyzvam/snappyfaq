@@ -26,7 +26,7 @@
 		<h2>{{ $pageTitle }}</h4>		
 
 		@if (Session::has('messageType'))
-			@include('layouts.'.Session::get('messageType'))
+			@include('layouts.flash-alert')
 		@endif
 
 		@yield('content')

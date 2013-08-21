@@ -53,6 +53,7 @@ class UsersController extends BaseController {
 		{
 			return Redirect::back()->withInput()
 								   ->withErrors($validation->messages())
+								   ->with('message', 'Unable to register! Please check your details')
 								   ->with('messageType', 'error');
 		}
 	}

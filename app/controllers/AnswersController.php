@@ -54,6 +54,7 @@ class AnswersController extends BaseController {
 
 		return Redirect::back()->withInput()
 							   ->withErrors($answer->messages)
+							   ->with('message', 'Your answer ('. Input::get('answer') .') was not posted!')
 							   ->with('messageType', 'error');
 
 	}

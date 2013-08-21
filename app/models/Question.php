@@ -6,7 +6,7 @@ class Question extends BaseModel {
 
 	public $rules = array
 	(
-		'question' => 'required:min:10|max:255',
+		'question' => 'required|min:10|max:255',
 		'solved' => 'in:0,1'
 	);
 

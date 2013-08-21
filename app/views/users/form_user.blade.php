@@ -4,6 +4,7 @@
 			<label for="username" class="control-label">Username</label>
 			<div class="controls">
 			{{ Form::text('username', Input::old('username'), array('id' => 'username')) }}
+			@include('layouts.error-field', array('fieldName' => 'username'))
 			</div>
 		</div>
 
@@ -11,6 +12,7 @@
 			<label for="password" class="control-label">Password</label>
 			<div class="controls">				
 			{{ Form::password('password', array('id' => 'password')) }}
+			@include('layouts.error-field', array('fieldName' => 'password'))
 			</div>
 		</div>
 
@@ -18,6 +20,7 @@
 			<label for="password_confirmation" class="control-label">Confirm Password</label>
 			<div class="controls">	
 			{{ Form::password('password_confirmation', array('id' => 'password_confirmation')) }}			
+			@include('layouts.error-field', array('fieldName' => 'password_confirmation'))
 			</div>
 		</div>
 

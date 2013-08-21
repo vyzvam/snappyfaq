@@ -84,6 +84,7 @@ class QuestionsController extends BaseController {
 
 		return Redirect::back()->withInput()
 							   ->withErrors($question->messages)
+							   ->with('message', 'You may have missed some information! please check further')
 							   ->with('messageType', 'error');
 	}
 
@@ -97,9 +98,8 @@ class QuestionsController extends BaseController {
 	{
 		$question = Question::find($id);
 
-		$answerListView = View::make('answers.list')->with('answers', $question->answersOrdered());
 		$showView = View::make('questions.show')->with('question', $question);
-		$showView->contentSub = $answerListView;
+		$showView->contentSub = View::make('answers.list')->with('answers', $question->answersOrdered());
 		$this->showLayoutWithTitle($showView);
 	}
 
@@ -144,11 +144,12 @@ class QuestionsController extends BaseController {
 
 		if ($q->save())
 		{
-			return Redirect::route('questions.edit', $id)->with('message', $this->pageTitles['update'])
+			return Redirect::route('questions.edit', $id)->with('message', 'Your Question have been changed!')
 														 ->with('messageType', 'success');
 		}
 
 		return Redirect::route('questions.edit', $id)->withErrors($q->messages)
+													->with('message', 'Unable to update your question to ('. Input::get('question') .')! Please check')
 													->with('messageType', 'error');
 	}
 

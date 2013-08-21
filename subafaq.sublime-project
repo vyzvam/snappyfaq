@@ -4,10 +4,6 @@
 		{
 			"follow_symlinks": true,
 			"path": "C:\\Apache2.2\\htdocs\\subafaq"
-		},
-		{
-			"follow_symlinks": true,
-			"path": "C:\\Apache2.2\\htdocs\\lvlsnappy"
 		}
 	]
 }

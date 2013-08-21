@@ -11,8 +11,15 @@
 	<div class="control-group">						
 		<label for="question" class="control-label">Question</label>
 		<div class="controls">
-		{{ Form::text('question', Input::old('question'), array('id' => 'question', 'class' => 'input-xxlarge')) }}
+		{{ Form::text('question', Input::old('question'), 
+					  array('id' => 'question', 'class' => 'input-xxlarge')
+		   ) 
+		}}
+		@include('layouts.error-field', array('fieldName' => 'question'))
 		</div>
+
+
+
 	</div>
 
 	@if (Route::currentRouteAction() == 'QuestionsController@edit')
